@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>Number Guesser</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1><span class="h1-number">Number</span> Guesser</h1>
+    </header>
+      <section>
+        <form>
+          <input id="input" type="number"  min="1" max="100" placeholder="Enter a number between 1 and 100" autocomplete="off">
+            <div class="buttons">
+              <div class="left"><button id="guess-btn" disabled>Guess</button>
+              </div>
+              <div class="right"><button id="clear" type="reset" disabled>Clear</button>
+              </div>
+            </div>
+        </form>
+        <h2>Your last guess was</h2>
+          <h3>?</h3>
+        <h2 id="hint"></h2>
+          <button id="reset-btn" disabled>Reset</button>
+      </section>
+    <script src="java.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,115 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+button {
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 1.5em;
+  padding: 3px 0;
+}
+
+button:disabled {
+  background-color: #D0D2D3;
+  pointer-events: none;
+}
+
+button:enabled {
+  background-color: #929497;
+}
+
+button:hover {
+  background-color: #eb008B;
+}
+
+.buttons {
+  width: 435px;
+}
+
+.buttons::after { 
+  content: "";
+  display: block; 
+  clear: both;
+}
+
+#clear {
+  display: block;
+  float: right;
+  width: 46%;
+}
+
+#guess-btn {
+  display: block;
+  float: left;
+  width: 46%;
+}
+
+h1 {
+  padding: 10px;
+  color: #e6e7e8;
+  text-align: center;
+  font-size: 3.2em;
+}
+
+.h1-number {
+  color: #ED458B;
+  font-weight: 700;
+}
+
+header {
+  background-color: #404041;
+}
+
+h2 {
+  color: #404041;
+  font-weight: 300;
+  font-size: 1.5em;
+  margin: 45px 0 0 0;
+}
+
+h3 {
+  color: #eb008b;
+  font-size: 10em;
+}
+
+#hint {
+  margin: 0;
+}
+
+input {
+  width: 435px;
+  font-size: 1.5em;
+  border: 1.5px solid #D0D2D3;
+  color: #D0D2D3;
+  margin: 42px 0 36px;
+}
+
+input::placeholder {
+  color: #D0D2D3;
+  padding: 8px;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#reset-btn {
+  width: 435px;
+  font-size: 1.1em;
+  margin: 50px;
+  padding: 4px;
+}
+
+section {
+  text-align: center;
+}
